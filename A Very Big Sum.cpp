@@ -6,13 +6,13 @@ vector<string> split_string(string);
 
 // Complete the aVeryBigSum function below.
 
-long long sum(vector<long>::iterator beg, vector<long>::iterator end) {
+long sum(vector<long>::iterator beg, vector<long>::iterator end) {
     return accumulate(beg, end, 0ll);
 }
 
 long aVeryBigSum(vector<long> ar) {
     int n = ar.size();
-    auto f1 = async(sum, ar.begin(), ar.begin()+n/2);
+    future<long> f1 = async(sum, ar.begin(), ar.begin()+n/2);
     return sum(ar.begin()+n/2, ar.end()) + f1.get();
 }
 
