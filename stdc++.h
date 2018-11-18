@@ -33,12 +33,12 @@
 #define FOR(i,less_than)    for (auto i=0; i<(less_than); ++i)
 #define FORI(i, container)  for (auto i=0; i<(container).size(); ++i)
 #define FORI_IF(i, container, assert) for (auto i=0; i<(container).size(); ++i) if (assert)
-#define ROFI(i, container)  for (auto i=(container).size()-1; i>=0; --i)
+#define ROFI(i, container)  for (auto i=SZ(container)-1; i>=0; --i)
 
 #define FOREACH(elem, container)  for (auto elem : (container))
 #define MEMSET(container, value)  memset(container, value, sizeof(container))
 #define FILL(container, value)    fill(container.begin(), container.end(), value)
-#define FILL0(container)    fill(container.begin(), container.end(), 0)
+#define FILL0(container)          fill(container.begin(), container.end(), 0)
 #define ALL(container)            (container).begin(), (container).end()
 #define SZ(container)             (int)((container).size())
 
