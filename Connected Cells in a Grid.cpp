@@ -9,7 +9,7 @@ void dfs(VVI& a, int x, int y, int& area) {
 
     FOR(dir, 8) {
         int tx=x+dx[dir], ty=y+dy[dir];
-        if (tx>0 && tx<a.size() && ty>0 && ty<=a[0].size() && a[tx][ty]) 
+        if (tx>0 && tx<a.size() && ty>0 && ty<a[0].size() && a[tx][ty]) 
             dfs(a, tx, ty, area);
     }
 }
