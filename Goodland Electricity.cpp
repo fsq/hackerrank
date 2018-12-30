@@ -23,7 +23,7 @@ int main() {
         } else {
             i = nxt + k;
             ++ans;
-            for (; nxt<i; ++nxt)
+            for (; nxt<n && nxt<i; ++nxt)
                 if (a[nxt])
                     pre = nxt;
         }
