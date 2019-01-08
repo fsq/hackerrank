@@ -20,7 +20,7 @@ int main() {
             int q = a[3] - y + 1;
             ans += (2*q-p+1)*p/2 - f[y][x^y];
         }
-
+ 
     cout << ans << endl;
 
 
