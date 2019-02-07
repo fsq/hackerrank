@@ -4,7 +4,7 @@ int main() {
     int q;
     cin >> q;
     while (q--) {
-        string s;
+        string s; 
         cin >> s;
         int ans = 0;
         for (int i=0, j=s.size()-1; i<j; ++i,--j)
