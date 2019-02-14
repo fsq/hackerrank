@@ -4,7 +4,7 @@ int main() {
 	int t;
 	cin >> t;
 	while (t--) {
-		string s; 
+		string s;  
 		cin >> s;
 		cout << unordered_set<char>(ALL(s)).size() << endl;
 	}
