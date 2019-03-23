@@ -12,7 +12,7 @@ int main() {
     for (int i=0; i<=10000; )
         if (cnt[i]) {
             ++ans;
-            i += 4;
+            i += 5;
         } else 
             ++i;
     cout << ans << endl;
